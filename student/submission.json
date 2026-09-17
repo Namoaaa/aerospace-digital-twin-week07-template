@@ -3,8 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "assumptions",
-      "model",
       "prediction",
       "verification",
       "claim",
@@ -15,7 +13,7 @@
   },
   "record": {
     "id": "fbea0a10-541c-4b0c-8458-dfcb8bd6d81f",
-    "revision": "2",
+    "revision": "5",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -47,7 +45,7 @@
       "assumptions": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "the model ignores pitch-rate damping and pre-existing trim, which in reality would oppose the rotation and reduce achieved acceleration below what this simplified balance predicts."
       },
       "inputs": {
         "suppliedBy": "instructor",
@@ -57,7 +55,7 @@
       "model": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "Demand: M_control + M_competing = Iy·α_target → solve for M_control (Iy, α_target, M_competing supplied)\nDynamic pressure: q∞ = ½ρV² (ρ, V supplied)\nCoefficient: ΔCm = Cmδ·δe, δe in rad (Cmδ, δe supplied)\nMoment: M_elevator = q∞·S·chord·ΔCm (S, chord supplied) — computed, then compared to required M_control"
       },
       "prediction": {
         "suppliedBy": "student",
