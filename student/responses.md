@@ -8,11 +8,11 @@ Answers and recorded model results from `submission.json`. This document does no
 
 - Record ID: fbea0a10-541c-4b0c-8458-dfcb8bd6d81f
 
-- Record revision: 5
+- Record revision: 6
 
 - Model hash: fnv1a-adee3cf8
 
-- Readiness: Marked incomplete or not ready; missing: prediction, verification, claim, reflection, aiUse, execution
+- Readiness: Marked incomplete or not ready; missing: verification, claim, reflection, aiUse, execution
 
 ## Supplied setup (instructor supplied)
 
@@ -61,7 +61,13 @@ Moment: M_elevator = q∞·S·chord·ΔCm (S, chord supplied) — computed, then
 **Prompt:** Before running your own implementation, predict the sign of its elevator moment and the effect of halving airspeed. Explain the competing moment.
 
 **Student response:**
-_Missing — no response supplied._
+```
+Sign of elevator moment: With δe = −5° (negative) and Cmδ = −0.8/rad (negative), ΔCm = Cmδ×δe is positive, so M_elevator is positive (nose-up).
+
+Effect of halving airspeed: M_elevator ∝ q∞ ∝ V², so halving V from 40 to 20 m/s cuts M_elevator to ¼ of its value.
+
+Competing moment: M_competing = −750 N·m is a fixed nose-down disturbance (e.g., from pitching moment about the CG unrelated to the elevator) that the control moment must first cancel before any net nose-up acceleration is achieved.
+```
 
 ### verification
 **Prompt:** Show one independent hand calculation with units. Compare it with your model, and explain a sign, unit, or limiting-case check.

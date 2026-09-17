@@ -3,7 +3,6 @@
   "readiness": {
     "ready": false,
     "missing": [
-      "prediction",
       "verification",
       "claim",
       "reflection",
@@ -13,7 +12,7 @@
   },
   "record": {
     "id": "fbea0a10-541c-4b0c-8458-dfcb8bd6d81f",
-    "revision": "5",
+    "revision": "6",
     "model": {
       "moduleId": "controls",
       "modelId": "week07-student-model",
@@ -60,7 +59,7 @@
       "prediction": {
         "suppliedBy": "student",
         "locked": false,
-        "text": ""
+        "text": "Sign of elevator moment: With δe = −5° (negative) and Cmδ = −0.8/rad (negative), ΔCm = Cmδ×δe is positive, so M_elevator is positive (nose-up).\n\nEffect of halving airspeed: M_elevator ∝ q∞ ∝ V², so halving V from 40 to 20 m/s cuts M_elevator to ¼ of its value.\n\nCompeting moment: M_competing = −750 N·m is a fixed nose-down disturbance (e.g., from pitching moment about the CG unrelated to the elevator) that the control moment must first cancel before any net nose-up acceleration is achieved."
       },
       "execution": {
         "suppliedBy": "automatic",
